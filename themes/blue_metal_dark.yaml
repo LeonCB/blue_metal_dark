@@ -298,18 +298,24 @@ blue_metal_dark:
   mush-card-primary-font-weight:  "var(--font-weight-primary)"
 
   # ============================
-  #   Card Mod
+  #   UI eXtension
   # ============================
-  card-mod-theme: blue_metal_dark
+  uix-theme: blue_metal_dark
 
-  card-mod-root: |
+  uix-root: |
     ha-card {
       background: transparent !important;
       box-shadow: none !important;
     }
 
-  card-mod-card: |
+  uix-card: |
     #states > div > * {
       font-weight: var(--entity-font-weight) !important;
       text-shadow: var(--entity-text-shadow) !important;
+    }
+    td {
+      text-shadow: var(--entity-text-shadow);
+    }
+    .card-header {
+      text-shadow: var(--card-header-shadow);
     }
