@@ -22,6 +22,38 @@ Blue Metal Dark:
     .card-header {
       text-shadow: var(--card-header-shadow);
     }
+    #header__title {
+      text-shadow: var(--card-header-shadow);
+      font-size: var(--ha-font-size-2xl) !important;
+    }
+
+  uix-grid-section-yaml: |
+    clock-weather-card$: |
+      clock-weather-card-today-right-wrap {
+        width: 90%;
+      }
+      clock-weather-card-today-right-wrap-center {
+        margin-right: -3px;
+        font-weight: 500;
+      }
+      clock-weather-card-today-right-wrap-center,
+      clock-weather-card-today-right-wrap-bottom {
+        justify-content: right !important;
+      }
+      clock-weather-card-today-right-wrap-bottom {
+        padding: 0 0 12px;
+      }
+      clock-weather-card-forecast-row {
+        --col-one-size: 2.5rem !important;
+      }
+    hui-grid-card$: |
+      .card-header {
+        text-shadow: var(--card-header-shadow);
+      }
+    mini-media-player$: |
+      ha-card {
+        height: 120px;
+      }
 
   # ============================
   #   Variabelen
@@ -30,12 +62,13 @@ Blue Metal Dark:
   background-header: "#1e2136"
   entity-text-shadow: "1px 1px 1px #000"
   font-weight-primary: "400"
-  font-weight-secondary: "400"
+  font-weight-secondary: "500"
   primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   theme-bg-alt: "#18191b"
   theme-bg: "#1d1e20"
   theme-sidebar-icon: "#797d86"
   theme-slider-disabled: "#0d2f73"
+  ha-line-height-condensed: "1.6"
 
   # ============================
   #   Entity row styling
@@ -45,22 +78,16 @@ Blue Metal Dark:
   # ============================
   #   Achtergrond
   # ============================
-  lovelace-background: 'radial-gradient(ellipse at 10% 25%, rgba(64, 112, 168, 0.65), transparent 55%), radial-gradient(ellipse at 90% 20%, rgba(185, 40, 120, 0.65), transparent 50%), radial-gradient(ellipse at 50% 75%, rgba(180, 110, 255, 0.6), transparent 65%), #151720'
-
-  # ============================
-  #   Klok font
-  # ============================
-  clock-font: "SFMono, monospace"
+  lovelace-background: "radial-gradient(ellipse at 10% 25%, rgba(64, 112, 168, 0.65), transparent 55%), radial-gradient(ellipse at 90% 20%, rgba(185, 40, 120, 0.65), transparent 50%), radial-gradient(ellipse at 50% 75%, rgba(180, 110, 255, 0.6), transparent 65%), #151720 fixed"
 
   # ============================
   #   HA core
   # ============================
   accent-color: "#494b50"
-  badge-red: "#603520"
+  badge-red: "#72241d"
   dark-primary-color: "#94979e"
   disabled-text-color: "#6c6f75"
-  error-color: "#db4437"
-  error-state-color: "var(--error-color)"
+  error-color: "#c94936"
   primary-background-color: "#27282b"
   primary-color: "#2581ab"
   primary-text-color: "#d4d5d7"
@@ -76,8 +103,7 @@ Blue Metal Dark:
   card-primary-font-weight: "var(--font-weight-primary)"
   data-table-background-color: "var(--theme-bg)"
   divider-color: "var(--theme-bg)"
-  ha-card-background: "rgba(10, 10, 10, 0.4)"
-  ha-card-border-radius: "10px"
+  ha-card-background: "rgba(10, 10, 10, 0.5)"
   ha-card-border-width: "0"
   ha-card-font-weight: "normal"
   ha-card-header-color: "var(--primary-text-color)"
@@ -102,6 +128,11 @@ Blue Metal Dark:
   # ============================
   app-header-edit-background-color: "var(--background-header)"
   app-header-edit-text-color: "#eaebee"
+
+  # ============================
+  #   Footer
+  # ============================
+  ha-box-shadow-l: "var(--ha-card-box-shadow)"
 
   # ============================
   #   Sidebar
@@ -274,8 +305,8 @@ Blue Metal Dark:
   # ============================
   #   ha-view
   # ============================
-  ha-view-sections-column-gap: "12px"
-  ha-view-sections-row-gap: "12px"
+  ha-view-sections-column-gap: "8px"
+  ha-view-sections-row-gap: "8px"
 
   # ============================
   #   HACS
@@ -313,6 +344,7 @@ Blue Metal Dark:
   mdc-button-background-color: "var(--primary-color)"
   mdc-text-field-fill-color: "var(--ha-color-neutral-20)"
   mdc-theme-text-primary-on-background: "var(--primary-text-color)"
+  mdc-data-table__cell: "2"
 
   # ============================
   #   CodeMirror
@@ -329,14 +361,11 @@ Blue Metal Dark:
   # ============================
   #   Energie
   # ============================
-  energy-battery-in-color: "#f06292"
-  energy-battery-out-color: "#4db6ac"
-  energy-gas-color: "#8e021b"
-  energy-grid-consumption-color: "#488fc2"
+  energy-battery-in-color: "#c76083"
+  energy-battery-out-color: "#60aec7"
   energy-grid-return-color: "#8353d1"
-  energy-non-fossil-color: "#0f9d58"
-  energy-solar-color: "#ff9800"
-  energy-water-color: "#00bcd4"
+  energy-non-fossil-color: "#60c772"
+  energy-solar-color: "#c7a260"
 
   # ============================
   #   Horizon-card
