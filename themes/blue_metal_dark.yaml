@@ -6,9 +6,9 @@ Blue Metal Dark:
   modes:
     dark: {}
 
-  # ============================
+  # =======================================
   #   UI eXtension
-  # ============================
+  # =======================================
   uix-theme: "Blue Metal Dark"
 
   uix-card: |
@@ -33,6 +33,7 @@ Blue Metal Dark:
         width: 90%;
       }
       clock-weather-card-today-right-wrap-center {
+        font-variant-numeric: tabular-nums;
         margin-right: -3px;
         font-weight: 500;
       }
@@ -55,11 +56,12 @@ Blue Metal Dark:
         height: 120px;
       }
 
-  # ============================
+  # =======================================
   #   Variabelen
-  # ============================
+  # =======================================
   card-header-shadow: "2px 2px 2px #000"
   background-header: "#1e2136"
+  disabled-bg: "#777a83"
   entity-text-shadow: "1px 1px 1px #000"
   font-weight-primary: "400"
   font-weight-secondary: "500"
@@ -69,20 +71,22 @@ Blue Metal Dark:
   theme-sidebar-icon: "#797d86"
   theme-slider-disabled: "#0d2f73"
   ha-line-height-condensed: "1.6"
+  today-color: "var(--primary-color)"
+  weekend-color: "#e67c73"
 
-  # ============================
+  # =======================================
   #   Entity row styling
-  # ============================
+  # =======================================
   entity-font-weight: "var(--font-weight-primary)"
 
-  # ============================
+  # =======================================
   #   Achtergrond
-  # ============================
+  # =======================================
   lovelace-background: "radial-gradient(ellipse at 10% 25%, rgba(64, 112, 168, 0.65), transparent 55%), radial-gradient(ellipse at 90% 20%, rgba(185, 40, 120, 0.65), transparent 50%), radial-gradient(ellipse at 50% 75%, rgba(180, 110, 255, 0.6), transparent 65%), #151720 fixed"
 
-  # ============================
+  # =======================================
   #   HA core
-  # ============================
+  # =======================================
   accent-color: "#494b50"
   badge-red: "#72241d"
   dark-primary-color: "#94979e"
@@ -90,26 +94,27 @@ Blue Metal Dark:
   error-color: "#c94936"
   primary-background-color: "#27282b"
   primary-color: "#2581ab"
-  primary-text-color: "#d4d5d7"
+  primary-text-color: "#c7c8cb"
   secondary-background-color: "var(--primary-background-color)"
   secondary-text-color: "var(--primary-text-color)"
   state-icon-color: "#6d7178"
   text-primary-color: "var(--primary-text-color)"
 
-  # ============================
+  # =======================================
   #   Card
-  # ============================
+  # =======================================
   card-background-color: "var(--theme-bg)"
   card-primary-font-weight: "var(--font-weight-primary)"
   data-table-background-color: "var(--theme-bg)"
   divider-color: "var(--theme-bg)"
   ha-card-background: "rgba(10, 10, 10, 0.5)"
   ha-card-border-width: "0"
+  ha-card-border-radius: "12px"
   ha-card-font-weight: "normal"
   ha-card-header-color: "var(--primary-text-color)"
   ha-ripple-hover-color: "var(--primary-text-color)"
   ha-ripple-hover-opacity: "0.1"
-  ha-ripple-pressed-color: "var(--primary-text-color)"
+  ha-ripple-pressed-color: "var(--ha-color-primary-40)"
   ha-ripple-pressed-opacity: "0.05"
   label-badge-background-color: "var(--theme-bg)"
   label-badge-border-color: "var(--badge-red)"
@@ -118,31 +123,31 @@ Blue Metal Dark:
   table-row-alternative-background-color: "var(--theme-bg-alt)"
   table-row-background-color: "var(--theme-bg)"
 
-  # ============================
+  # =======================================
   #   Dialog
-  # ============================
+  # =======================================
   ha-dialog-surface-background: "var(--background-header)"
 
-  # ============================
+  # =======================================
   #   Header Top
-  # ============================
+  # =======================================
   app-header-edit-background-color: "var(--background-header)"
   app-header-edit-text-color: "#eaebee"
 
-  # ============================
+  # =======================================
   #   Footer
-  # ============================
+  # =======================================
   ha-box-shadow-l: "var(--ha-card-box-shadow)"
 
-  # ============================
+  # =======================================
   #   Sidebar
-  # ============================
+  # =======================================
   sidebar-icon-color: "var(--theme-sidebar-icon)"
   sidebar-text-color: "var(--primary-text-color)"
 
-  # ============================
+  # =======================================
   #   Slider
-  # ============================
+  # =======================================
   md-slider-active-track-color: "var(--ha-color-primary-60)"
   md-slider-disabled-active-track-color: "var(--theme-slider-disabled)"
   md-slider-disabled-handle-color: "var(--primary-text-color)"
@@ -150,23 +155,23 @@ Blue Metal Dark:
   md-slider-handle-color: "var(--primary-color)"
   md-slider-inactive-track-color: "rgba(255, 255, 255, 0.2)"
 
-  # ============================
+  # =======================================
   #   Toggle / Switch
-  # ============================
+  # =======================================
   mdc-theme-secondary: "#0d59f2"
   switch-checked-button-color: "#0d59f2"
   switch-checked-track-color: "#3d3f43"
   switch-unchecked-button-color: "#3d3f43"
   switch-unchecked-track-color: "#0c0d0d"
 
-  # ============================
+  # =======================================
   #   Tabs
-  # ============================
+  # =======================================
   mdc-theme-primary: "var(--primary-color)"
 
-  # =========================
+  # =======================================
   #   Typografie
-  # =========================
+  # =======================================
   ha-card-header-font-family: "var(--primary-font-family)"
   ha-font-family-body: "var(--primary-font-family)"
   ha-font-family-code: "var(--primary-font-family)"
@@ -190,9 +195,9 @@ Blue Metal Dark:
   ha-heading-card-title-font-size: "var(--ha-font-size-l)"
   ha-font-smoothing: "antialiased"
 
-  # ============================
+  # =======================================
   #   Primaire kleuren
-  # ============================
+  # =======================================
   ha-color-primary-05: "#0d1219"
   ha-color-primary-10: "#131c26"
   ha-color-primary-20: "#202e3f"
@@ -205,9 +210,9 @@ Blue Metal Dark:
   ha-color-primary-90: "#eaf2f9"
   ha-color-primary-95: "#f6f9fc"
 
-  # ============================
+  # =======================================
   #   ha-color tokens
-  # ============================
+  # =======================================
   # Rand
   ha-color-border-danger-loud: "var(--ha-color-red-60)"
   ha-color-border-danger-normal: "var(--ha-color-red-50)"
@@ -302,15 +307,15 @@ Blue Metal Dark:
   ha-color-text-primary: "var(--white-color)"
   ha-color-text-secondary: "var(--ha-color-neutral-80)"
 
-  # ============================
+  # =======================================
   #   ha-view
-  # ============================
+  # =======================================
   ha-view-sections-column-gap: "8px"
   ha-view-sections-row-gap: "8px"
 
-  # ============================
+  # =======================================
   #   HACS
-  # ============================
+  # =======================================
   hacs-badge-color: "var(--accent-color)"
   hacs-badge-text-color: "#fff"
   hacs-status-installed: "#80b929"
@@ -318,37 +323,37 @@ Blue Metal Dark:
   hacs-status-pending-update: "#b96229"
   link-text-color: "var(--accent-color)"
 
-  # ============================
+  # =======================================
   #   Mini Media Player
-  # ============================
+  # =======================================
   mini-media-player-accent-color: "var(--accent-color)"
   mini-media-player-base-color: "var(--primary-text-color)"
   mini-media-player-icon-color: "var(--primary-text-color)"
 
-  # ============================
+  # =======================================
   #   Markdown
-  # ============================
+  # =======================================
   markdown-code-background-color: "var(--primary-background-color)"
   markdown-table-border-collapse: "collapse"
   markdown-table-border-color: "transparent"
   markdown-table-border-style: "none"
   markdown-table-border-width: "0"
 
-  # ============================
+  # =======================================
   #   Mdc / invoervelden
-  # ============================
+  # =======================================
   input-dropdown-icon-color: "var(--theme-sidebar-icon)"
   input-fill-color: "var(--theme-bg)"
   input-label-ink-color: "var(--primary-text-color)"
   input-text-color: "var(--primary-text-color)"
   mdc-button-background-color: "var(--primary-color)"
-  mdc-text-field-fill-color: "var(--ha-color-neutral-20)"
+  mdc-text-field-fill-color: "var(--mdc-select-fill-color)"
   mdc-theme-text-primary-on-background: "var(--primary-text-color)"
   mdc-data-table__cell: "2"
 
-  # ============================
+  # =======================================
   #   CodeMirror
-  # ============================
+  # =======================================
   codemirror-atom: "#f90"
   codemirror-comment: "#868686"
   codemirror-def: "#7070f9"
@@ -358,29 +363,46 @@ Blue Metal Dark:
   codemirror-property: "#f25eb8"
   codemirror-string: "#46c8ff"
 
-  # ============================
+  # =======================================
   #   Energie
-  # ============================
+  # =======================================
   energy-battery-in-color: "#c76083"
   energy-battery-out-color: "#60aec7"
   energy-grid-return-color: "#8353d1"
   energy-non-fossil-color: "#60c772"
   energy-solar-color: "#c7a260"
 
-  # ============================
+  # =======================================
+  #   tile-card (2026.8.0)
+  # =======================================
+  #ha-tile-info-gap: "0px"
+  #ha-tile-info-min-height: "none" or "0"
+  #ha-tile-info-primary-min-height: "none"
+  #ha-tile-info-primary-line-clamp: "1"            #Out of the box, Home Assistant forces primary text to a single line using text-overflow: ellipsis.
+
+  # =======================================
+  #   Web Awesome split panel  (2026.8.0)
+  # =======================================
+  #ha-split-panel-divider-width: "4px"             #The thickness of the visible divider bar separating the two panels
+  #ha-split-panel-divider-hit-area: "12px"         #The invisible click/drag boundary around the divider to make grabbing it with a cursor easier.
+  #ha-split-panel-min: "0"                         #The minimum width or height allowed for the primary ("start") panel so it can't be squeezed to zero.
+  #ha-split-panel-max: "100%"                      #The maximum width or height the primary ("start") panel can expand to fill.
+  #ha-split-panel-grip-display: "flex" or "block)  #Controls the visibility/style of the little center handle (grab indicator) on the divider line.
+
+  # =======================================
   #   Horizon-card
-  # ============================
+  # =======================================
   hc-primary: "var(--primary-text-color)"
 
-  # ============================
+  # =======================================
   #   Mini Graph Card
-  # ============================
+  # =======================================
   mcg-title-font-weight: "var(--font-weight-primary)"
   mcg-title-letter-spacing: "normal"
 
-  # ============================
+  # =======================================
   #   Mushroom
-  # ============================
+  # =======================================
   mush-card-primary-font-weight: "var(--font-weight-primary)"
   mush-card-secondary-font-weight: "var(--font-weight-secondary)"
   mush-chip-avatar-border-radius: "50%"
