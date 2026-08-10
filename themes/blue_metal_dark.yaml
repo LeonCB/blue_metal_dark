@@ -57,20 +57,20 @@ Blue Metal Dark:
       }
 
   # =======================================
-  #   Variabelen
+  #   Variables
   # =======================================
+  background-header: "#171929"
   card-header-shadow: "2px 2px 2px #000"
-  background-header: "#1e2136"
   disabled-bg: "#777a83"
   entity-text-shadow: "1px 1px 1px #000"
   font-weight-primary: "400"
   font-weight-secondary: "500"
+  light-fallback-bg-color: "color-mix(in srgb, var(--yellow-color) 70%, transparent)"
   primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   theme-bg-alt: "#18191b"
   theme-bg: "#1d1e20"
   theme-sidebar-icon: "#797d86"
   theme-slider-disabled: "#0d2f73"
-  ha-line-height-condensed: "1.6"
   today-color: "var(--primary-color)"
   weekend-color: "#e67c73"
 
@@ -80,7 +80,7 @@ Blue Metal Dark:
   entity-font-weight: "var(--font-weight-primary)"
 
   # =======================================
-  #   Achtergrond
+  #   Background
   # =======================================
   lovelace-background: "radial-gradient(ellipse at 10% 25%, rgba(64, 112, 168, 0.65), transparent 55%), radial-gradient(ellipse at 90% 20%, rgba(185, 40, 120, 0.65), transparent 50%), radial-gradient(ellipse at 50% 75%, rgba(180, 110, 255, 0.6), transparent 65%), #151720 fixed"
 
@@ -133,6 +133,7 @@ Blue Metal Dark:
   # =======================================
   app-header-edit-background-color: "var(--background-header)"
   app-header-edit-text-color: "#eaebee"
+  app-header-selection-bar-color: "var(--primary-color)"
 
   # =======================================
   #   Footer
