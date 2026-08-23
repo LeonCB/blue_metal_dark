@@ -26,7 +26,9 @@ Blue Metal Dark:
       text-shadow: var(--card-header-shadow);
       font-size: var(--ha-font-size-2xl) !important;
     }
-
+    .sgc-title {
+      text-shadow: var(--entity-text-shadow);
+    }
   uix-grid-section-yaml: |
     clock-weather-card$: |
       clock-weather-card-today-right-wrap {
