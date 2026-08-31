@@ -135,7 +135,7 @@ Blue Metal Dark:
   # =======================================
   #   Variabelen
   # =======================================
-  apps-card-height: "130px"
+  apps-card-height: "120px"
   background-header: "#1e2136"
   card-header-shadow: "2px 2px 2px #000"
   disabled-bg: "#777a83"
@@ -143,7 +143,7 @@ Blue Metal Dark:
   entity-text-shadow: "1px 1px 1px #000"
   font-weight-primary: "400"
   font-weight-secondary: "500"
-  ha-line-height-condensed: "1.6"
+  ha-line-height-condensed: "1.45"
   light-bg-fallback-color: "#f4d03d"
   primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   theme-bg-alt: "#18191b"
