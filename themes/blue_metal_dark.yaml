@@ -10,7 +10,6 @@ Blue Metal Dark:
   #   UI eXtension
   # =======================================
   uix-theme: "Blue Metal Dark"
-
   uix-card: |
     #states > div > * {
       font-weight: var(--entity-font-weight) !important;
@@ -29,7 +28,6 @@ Blue Metal Dark:
     .sgc-title {
       text-shadow: var(--card-header-shadow);
     }
-
   uix-grid-section-yaml: |
     clock-weather-card$: |
       clock-weather-card-today-right-wrap {
@@ -58,7 +56,6 @@ Blue Metal Dark:
       ha-card {
         height: 120px;
       }
-
   uix-config-yaml: |
     ha-config-apps-installed $ supervisor-apps-card-content $: |
       :host {
@@ -76,7 +73,6 @@ Blue Metal Dark:
         flex: 1;
       }
       .addition {
-        height: auto !important;
         overflow-y: auto !important;
         overflow-x: hidden !important;
         flex: 1 1 0;
@@ -125,7 +121,6 @@ Blue Metal Dark:
         flex: 1;
       }
       .addition {
-        height: auto !important;
         overflow-y: auto !important;
         overflow-x: hidden !important;
         flex: 1 1 0;
@@ -140,23 +135,23 @@ Blue Metal Dark:
   # =======================================
   #   Variabelen
   # =======================================
-  card-header-shadow: "2px 2px 2px #000"
+  apps-card-height: "130px"
   background-header: "#1e2136"
+  card-header-shadow: "2px 2px 2px #000"
   disabled-bg: "#777a83"
   edit-background-header-color: "#0e1020"
   entity-text-shadow: "1px 1px 1px #000"
   font-weight-primary: "400"
   font-weight-secondary: "500"
+  ha-line-height-condensed: "1.6"
   light-bg-fallback-color: "#f4d03d"
   primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   theme-bg-alt: "#18191b"
   theme-bg: "#1d1e20"
   theme-sidebar-icon: "#797d86"
   theme-slider-disabled: "#0d2f73"
-  ha-line-height-condensed: "1.6"
   today-color: "var(--primary-color)"
   weekend-color: "#e67c73"
-  apps-card-height: "150px"
 
   # =======================================
   #   Entity row styling
@@ -192,8 +187,8 @@ Blue Metal Dark:
   data-table-background-color: "var(--theme-bg)"
   divider-color: "var(--theme-bg)"
   ha-card-background: "rgba(10, 10, 10, 0.5)"
-  ha-card-border-width: "0"
   ha-card-border-radius: "12px"
+  ha-card-border-width: "0"
   ha-card-font-weight: "normal"
   ha-card-header-color: "var(--primary-text-color)"
   ha-ripple-hover-color: "var(--primary-text-color)"
@@ -265,7 +260,6 @@ Blue Metal Dark:
   mdc-typography-body1-font-family: "var(--primary-font-family)"
   mdc-typography-button-font-family: "var(--primary-font-family)"
   mdc-typography-font-family: "var(--primary-font-family)"
-
   ha-font-size-xs: "10px"
   ha-font-size-s: "12px"
   ha-font-size-m: "14px"
