@@ -54,7 +54,7 @@ Blue Metal Dark:
       }
     mini-media-player$: |
       ha-card {
-        height: 120px;
+        height: var(--mini-media-player-height);
       }
   uix-config-yaml: |
     ha-config-apps-installed $ supervisor-apps-card-content $: |
@@ -145,6 +145,7 @@ Blue Metal Dark:
   font-weight-secondary: "500"
   ha-line-height-condensed: "1.45"
   light-bg-fallback-color: "#f4d03d"
+  mini-media-player-height: "120px"
   primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   theme-bg-alt: "#18191b"
   theme-bg: "#1d1e20"
@@ -427,7 +428,6 @@ Blue Metal Dark:
   mdc-button-background-color: "var(--primary-color)"
   mdc-text-field-fill-color: "var(--mdc-select-fill-color)"
   mdc-theme-text-primary-on-background: "var(--primary-text-color)"
-  mdc-data-table__cell: "2"
 
   # =======================================
   #   CodeMirror
