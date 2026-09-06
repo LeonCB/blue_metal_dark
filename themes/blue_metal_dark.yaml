@@ -28,7 +28,7 @@ Blue Metal Dark:
     .sgc-title {
       text-shadow: var(--card-header-shadow);
     }
-  uix-grid-section-yaml: |
+  uix-card-yaml: |
     clock-weather-card$: |
       clock-weather-card-today-right-wrap {
         width: 90%;
@@ -48,6 +48,7 @@ Blue Metal Dark:
       clock-weather-card-forecast-row {
         --col-one-size: 2.5rem !important;
       }
+  uix-grid-section-yaml: |
     hui-grid-card$: |
       .card-header {
         text-shadow: var(--card-header-shadow);
@@ -278,6 +279,7 @@ Blue Metal Dark:
   #   Primaire kleuren
   # =======================================
   ha-color-primary-05: "#0d1219"
+  ha-color-primary-15: "#192532"
   ha-color-primary-10: "#131c26"
   ha-color-primary-20: "#202e3f"
   ha-color-primary-30: "#30455f"
@@ -288,6 +290,70 @@ Blue Metal Dark:
   ha-color-primary-80: "#d2e1f2"
   ha-color-primary-90: "#eaf2f9"
   ha-color-primary-95: "#f6f9fc"
+
+  # ====================================
+  # Neutrale kleuren
+  # ====================================
+  ha-color-neutral-05: "#101316"
+  ha-color-neutral-10: "#1a1e22"
+  ha-color-neutral-15: "#23282e"
+  ha-color-neutral-20: "#2e343b"
+  ha-color-neutral-30: "#3d444d"
+  ha-color-neutral-40: "#545c66"
+  ha-color-neutral-50: "#6f7781"
+  ha-color-neutral-60: "#8e959e"
+  ha-color-neutral-70: "#adb4bc"
+  ha-color-neutral-80: "#c9cfd5"
+  ha-color-neutral-90: "#e2e7eb"
+  ha-color-neutral-95: "#f0f3f5"
+
+  # ====================================
+  # Rode kleuren (Gevaar/Fout)
+  # ====================================
+  ha-color-red-05: "#1c0b0a"
+  ha-color-red-10: "#2b1311"
+  ha-color-red-15: "#3c1713"
+  ha-color-red-20: "#521c16"
+  ha-color-red-30: "#72241d"
+  ha-color-red-40: "#9a2f26"
+  ha-color-red-50: "#c94936"
+  ha-color-red-60: "#dd6b58"
+  ha-color-red-70: "#e99a8a"
+  ha-color-red-80: "#f4c6bd"
+  ha-color-red-90: "#fae3de"
+  ha-color-red-95: "#fdf1ef"
+
+  # ====================================
+  # Groene kleuren (Succes)
+  # ====================================
+  ha-color-green-05: "#0b1b12"
+  ha-color-green-10: "#10261a"
+  ha-color-green-15: "#143422"
+  ha-color-green-20: "#1b4a2e"
+  ha-color-green-30: "#256e41"
+  ha-color-green-40: "#31995a"
+  ha-color-green-50: "#43b86e"
+  ha-color-green-60: "#60c772"
+  ha-color-green-70: "#8ad9a3"
+  ha-color-green-80: "#c4edcd"
+  ha-color-green-90: "#e2f6e6"
+  ha-color-green-95: "#f1fbf2"
+
+  # ====================================
+  # Oranje kleuren (Waarschuwing)
+  # ====================================
+  ha-color-orange-05: "#1e1208"
+  ha-color-orange-10: "#2c1c0e"
+  ha-color-orange-15: "#402912"
+  ha-color-orange-20: "#573a18"
+  ha-color-orange-30: "#7d5424"
+  ha-color-orange-40: "#9e6d2f"
+  ha-color-orange-50: "#b96229"
+  ha-color-orange-60: "#c7a260"
+  ha-color-orange-70: "#d9b988"
+  ha-color-orange-80: "#ecdec5"
+  ha-color-orange-90: "#f6efe2"
+  ha-color-orange-95: "#faf7f1"
 
   # =======================================
   #   ha-color tokens
@@ -449,23 +515,6 @@ Blue Metal Dark:
   energy-grid-return-color: "#8353d1"
   energy-non-fossil-color: "#60c772"
   energy-solar-color: "#c7a260"
-
-  # =======================================
-  #   tile-card (2026.8.0)
-  # =======================================
-  #ha-tile-info-gap: "0px"
-  #ha-tile-info-min-height: "none" or "0"
-  #ha-tile-info-primary-min-height: "none"
-  #ha-tile-info-primary-line-clamp: "1"            #Out of the box, Home Assistant forces primary text to a single line using text-overflow: ellipsis.
-
-  # =======================================
-  #   Web Awesome split panel  (2026.8.0)
-  # =======================================
-  #ha-split-panel-divider-width: "4px"             #The thickness of the visible divider bar separating the two panels
-  #ha-split-panel-divider-hit-area: "12px"         #The invisible click/drag boundary around the divider to make grabbing it with a cursor easier.
-  #ha-split-panel-min: "0"                         #The minimum width or height allowed for the primary ("start") panel so it can't be squeezed to zero.
-  #ha-split-panel-max: "100%"                      #The maximum width or height the primary ("start") panel can expand to fill.
-  #ha-split-panel-grip-display: "flex" or "block)  #Controls the visibility/style of the little center handle (grab indicator) on the divider line.
 
   # =======================================
   #   Horizon-card
