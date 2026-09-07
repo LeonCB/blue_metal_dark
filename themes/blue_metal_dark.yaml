@@ -197,6 +197,8 @@ Blue Metal Dark:
   ha-ripple-hover-opacity: "0.22"
   ha-ripple-pressed-color: "var(--ha-color-primary-40)"
   ha-ripple-pressed-opacity: "0.05"
+  mdc-ripple-color: "var(--primary-color)"
+  mdc-ripple-hover-opacity: "0.12"
   label-badge-background-color: "var(--theme-bg)"
   label-badge-border-color: "var(--badge-red)"
   label-badge-red: "var(--badge-red)"
