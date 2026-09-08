@@ -367,8 +367,6 @@ Blue Metal Dark:
   ha-color-border-success-quiet: "var(--ha-color-green-20)"
   ha-color-border-warning-loud: "var(--ha-color-orange-60)"
   ha-color-border-warning-quiet: "var(--ha-color-orange-20)"
-  # border-danger-normal, -neutral-loud, -neutral-normal, -normal (primary) en -warning-normal zijn
-  # weggelaten: identiek aan HA's eigen dark-mode default (werken via je paletten hierboven gewoon door).
 
   # Gevaar/Fout
   ha-color-fill-danger-loud-active: "var(--ha-color-red-60)"
@@ -379,10 +377,6 @@ Blue Metal Dark:
   ha-color-fill-danger-quiet-active: "var(--ha-color-red-20)"
   ha-color-fill-danger-quiet-hover: "var(--ha-color-red-15)"
   ha-color-fill-danger-quiet-resting: "var(--ha-color-red-10)"
-  # fill-danger-loud-resting is weggelaten: identiek aan HA's dark-default (red-40).
-
-  # Uitgeschakeld
-  # Volledig weggelaten: alle zes waarden kwamen exact overeen met HA's eigen dark-mode default.
 
   # Neutraal - Standaard elementen
   ha-color-fill-neutral-loud-hover: "var(--ha-color-neutral-50)"
@@ -391,7 +385,6 @@ Blue Metal Dark:
   ha-color-fill-neutral-normal-hover: "var(--ha-color-neutral-30)"
   ha-color-fill-neutral-normal-resting: "var(--ha-color-neutral-20)"
   ha-color-fill-neutral-quiet-active: "var(--ha-color-neutral-15)"
-  # fill-neutral-loud-active, -quiet-hover en -quiet-resting zijn weggelaten: identiek aan HA's dark-default.
 
   # Primair - Accentkleur/Acties
   ha-color-fill-primary-loud-active: "var(--ha-color-primary-60)"
@@ -400,7 +393,6 @@ Blue Metal Dark:
   ha-color-fill-primary-normal-hover: "var(--ha-color-primary-30)"
   ha-color-fill-primary-normal-resting: "var(--ha-color-primary-20)"
   ha-color-fill-primary-quiet-active: "var(--ha-color-primary-15)"
-  # fill-primary-loud-resting, -quiet-hover en -quiet-resting zijn weggelaten: identiek aan HA's dark-default.
 
   # Succes - Gelukt/Veilig
   ha-color-fill-success-loud-active: "var(--ha-color-green-60)"
@@ -411,7 +403,6 @@ Blue Metal Dark:
   ha-color-fill-success-quiet-active: "var(--ha-color-green-20)"
   ha-color-fill-success-quiet-hover: "var(--ha-color-green-15)"
   ha-color-fill-success-quiet-resting: "var(--ha-color-green-10)"
-  # fill-success-loud-resting is weggelaten: identiek aan HA's dark-default (green-40).
 
   # Waarschuwing
   ha-color-fill-warning-loud-active: "var(--ha-color-orange-60)"
@@ -422,16 +413,9 @@ Blue Metal Dark:
   ha-color-fill-warning-quiet-active: "var(--ha-color-orange-20)"
   ha-color-fill-warning-quiet-hover: "var(--ha-color-orange-15)"
   ha-color-fill-warning-quiet-resting: "var(--ha-color-orange-10)"
-  # fill-warning-loud-resting is weggelaten: identiek aan HA's dark-default (orange-40).
 
   # Form achtergrond
   ha-color-form-background-disabled: "var(--ha-color-neutral-10)"
-  # form-background en form-background-hover zijn weggelaten: identiek aan HA's dark-default.
-
-  # Tekst & labels
-  # Dit hele blok (on-*, text-*, surface-*) is weggelaten: elke waarde kwam - via je eigen
-  # ha-color-primary/neutral/red/green/orange-paletten hierboven - exact overeen met HA's
-  # eigen dark-mode default. Blijft dus gewoon werken, alleen niet meer dubbel gedefinieerd.
 
   # =======================================
   #   ha-view
