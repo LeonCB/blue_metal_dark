@@ -127,7 +127,23 @@ Blue Metal Dark:
       .footer {
         margin-top: auto;
       }
-
+    ha-config-dashboard $$ ha-list-item-button $: |
+      .base:hover {
+        --ha-row-item-text-color: var(--hover-text) !important;
+        color: var(--hover-text) !important;
+        --secondary-text-color: var(--hover-text) !important;
+      }
+    zha-config-dashboard $: |
+      ha-md-list-item:hover {
+        --md-list-item-label-text-color: var(--hover-text) !important;
+        --md-list-item-supporting-text-color: var(--hover-text) !important;
+        color: var(--hover-text) !important;
+      }
+    ha-config-integration-page $ ha-config-entry-row $ ha-config-entry-device-row $: |
+      ha-md-list-item:hover {
+        --md-list-item-label-text-color: var(--hover-text) !important;
+        --md-list-item-supporting-text-color: var(--hover-text) !important;
+      }
   # =======================================
   #   Variabelen
   # =======================================
@@ -140,6 +156,7 @@ Blue Metal Dark:
   font-weight-primary: "400"
   font-weight-secondary: "500"
   ha-line-height-condensed: "1.45"
+  hover-text: "#ffffee"
   light-bg-fallback-color: "#fad641"
   mini-media-player-height: "120px"
   primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
@@ -427,7 +444,7 @@ Blue Metal Dark:
   #   HACS
   # =======================================
   hacs-badge-color: "var(--accent-color)"
-  hacs-badge-text-color: "#fff"
+  hacs-badge-text-color: "var(--white-color)"
   hacs-status-installed: "#80b929"
   hacs-status-pending-restart: "#b92938"
   hacs-status-pending-update: "var(--ha-color-orange-50)"
