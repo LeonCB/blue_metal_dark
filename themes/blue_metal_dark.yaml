@@ -133,6 +133,12 @@ Blue Metal Dark:
         color: var(--hover-text) !important;
         --secondary-text-color: var(--hover-text) !important;
       }
+    ha-config-connectivity $$ ha-list-item-button $: |
+      .base:hover {
+        --ha-row-item-text-color: var(--hover-text) !important;
+        color: var(--hover-text) !important;
+        --secondary-text-color: var(--hover-text) !important;
+      }
     zha-config-dashboard $: |
       ha-md-list-item:hover {
         --md-list-item-label-text-color: var(--hover-text) !important;
@@ -143,6 +149,15 @@ Blue Metal Dark:
       ha-md-list-item:hover {
         --md-list-item-label-text-color: var(--hover-text) !important;
         --md-list-item-supporting-text-color: var(--hover-text) !important;
+        color: var(--hover-text) !important;
+      }
+    cloud-account $ cloud-account-overview $: |
+      ha-md-list-item:hover {
+        --md-list-item-label-text-color: var(--hover-text) !important;
+        --md-list-item-supporting-text-color: var(--hover-text) !important;
+        --primary-text-color: var(--hover-text) !important;
+        --secondary-text-color: var(--hover-text) !important;
+        color: var(--hover-text) !important;
       }
   # =======================================
   #   Variabelen
