@@ -253,7 +253,6 @@ Blue Metal Dark:
   #   Sidebar
   # =======================================
   sidebar-icon-color: "var(--theme-sidebar-icon)"
-  sidebar-text-color: "var(--primary-text-color)"
 
   # =======================================
   #   Slider
@@ -275,17 +274,11 @@ Blue Metal Dark:
   switch-unchecked-track-color: "#0c0d0d"
 
   # =======================================
-  #   Tabs
-  # =======================================
-  mdc-theme-primary: "var(--primary-color)"
-
-  # =======================================
   #   Typografie
   # =======================================
   ha-card-header-font-family: "var(--primary-font-family)"
   ha-font-family-body: "var(--primary-font-family)"
   ha-font-family-code: "var(--primary-font-family)"
-  ha-font-family-heading: "var(--primary-font-family)"
   ha-font-family-longform: "var(--primary-font-family)"
   md-list-item-label-text-font: "var(--primary-font-family)"
   mdc-typography-body1-font-family: "var(--primary-font-family)"
@@ -302,7 +295,6 @@ Blue Metal Dark:
   ha-font-size-5xl: "42px"
   title-font-size: "20px"
   ha-heading-card-title-font-size: "var(--ha-font-size-l)"
-  ha-font-smoothing: "antialiased"
 
   # =======================================
   #   Primaire kleuren
@@ -475,7 +467,6 @@ Blue Metal Dark:
   # =======================================
   #   Markdown
   # =======================================
-  markdown-code-background-color: "var(--primary-background-color)"
   markdown-table-border-collapse: "collapse"
   markdown-table-border-color: "transparent"
   markdown-table-border-style: "none"
@@ -489,8 +480,6 @@ Blue Metal Dark:
   input-label-ink-color: "var(--primary-text-color)"
   input-text-color: "var(--primary-text-color)"
   mdc-button-background-color: "var(--primary-color)"
-  mdc-text-field-fill-color: "var(--mdc-select-fill-color)"
-  mdc-theme-text-primary-on-background: "var(--primary-text-color)"
 
   # =======================================
   #   CodeMirror
