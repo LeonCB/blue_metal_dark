@@ -1,0 +1,40 @@
+name: Release
+on:
+  workflow_dispatch:
+    inputs:
+      notes:
+        description: "Release notes (leeg = automatisch uit de commits)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Validate theme
+        run: |
+          pip install yamllint
+          yamllint themes/
+      - name: Next version
+        id: version
+        run: |
+          prefix="$(TZ=Europe/Amsterdam date +%Y).$(TZ=Europe/Amsterdam date +%-m)"
+          last=$(git tag -l "${prefix}.*" | sed "s/^${prefix}\.//" | grep -E '^[0-9]+$' | sort -n | tail -1)
+          version="${prefix}.$(( ${last:-0} + 1 ))"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Next version: $version"
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+          NOTES: ${{ inputs.notes }}
+        run: |
+          if [ -n "$NOTES" ]; then
+            gh release create "$VERSION" --target "$GITHUB_SHA" --title "$VERSION" --notes "$NOTES"
+          else
+            gh release create "$VERSION" --target "$GITHUB_SHA" --title "$VERSION" --generate-notes
+          fi
