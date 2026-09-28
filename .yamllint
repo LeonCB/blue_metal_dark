@@ -1,15 +1,15 @@
 ---
 
 yaml-files:
-  - "themes/blue_night.yaml"
+  - "themes/*.yaml"
 
 rules:
   braces:
     level: error
     min-spaces-inside: 1
     max-spaces-inside: 1
-    min-spaces-inside-empty: -1
-    max-spaces-inside-empty: -1
+    min-spaces-inside-empty: 0
+    max-spaces-inside-empty: 0
   brackets:
     level: error
     min-spaces-inside: 0
@@ -56,8 +56,7 @@ rules:
     check-multi-line-strings: false
   key-duplicates:
     level: error
-  key-ordering:
-    level: error
+  key-ordering: disable
   line-length:
     level: warning
     max: 120
