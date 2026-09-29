@@ -19,9 +19,3 @@ Copy `themes/blue_metal_dark.yaml` to `config/themes/blue_metal_dark/` and reloa
 ## Requirements
 
 The theme uses UIX (available via HACS) for some card styling (`uix-theme`, `uix-card-yaml`). Without UIX the colors still work; only those extra tweaks are skipped.
-
-## Versioning
-
-Releases use `YEAR.MONTH.NUMBER` (e.g. `2026.9.1` = first release of September 2026). The badge above always shows the latest release.
-
-To publish a release: **Actions → Release → Run workflow**. The workflow validates the theme, works out the next number for the current month and creates the release (notes are generated from the commits unless you fill them in).
