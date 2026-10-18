@@ -1,4 +1,3 @@
----
 #
 # Blue Metal Dark Theme
 #
@@ -15,9 +14,6 @@ Blue Metal Dark:
       :host(vertical-stack-in-card) ha-card > div {
         --ha-card-background: none;
       }
-      :host(hui-grid-card) .card-header {
-        text-shadow: var(--card-header-shadow);
-      }
       :host(mini-media-player) ha-card {
         height: var(--mini-media-player-height);
       }
@@ -30,7 +26,7 @@ Blue Metal Dark:
         letter-spacing: -0.012em;
       }
     clock-weather-card$: |
-      .card-header {
+      :host .card-header {
         text-shadow: var(--card-header-shadow);
       }
       clock-weather-card-today-right-wrap {
@@ -47,15 +43,11 @@ Blue Metal Dark:
         justify-content: right !important;
       }
     hui-grid-card $: |
-      .card-header {
-        text-shadow: var(--card-header-shadow);
-      }
-    streamline-card $ hui-grid-card $: |
-      .card-header {
+      :host .card-header {
         text-shadow: var(--card-header-shadow);
       }
     ha-card $: |
-      .card-header {
+      :host .card-header {
         text-shadow: var(--card-header-shadow);
       }
   uix-config-yaml: |
@@ -105,13 +97,7 @@ Blue Metal Dark:
         --secondary-text-color: var(--hover-text) !important;
       }
     ha-config-connectivity $$ ha-list-item-button $: *list_item_button_hover
-    zha-config-dashboard $: &md_list_item_hover |
-      ha-md-list-item:hover {
-        --md-list-item-label-text-color: var(--hover-text) !important;
-        --md-list-item-supporting-text-color: var(--hover-text) !important;
-        color: var(--hover-text) !important;
-      }
-    ha-config-integration-page $ ha-config-entry-row $ ha-config-entry-device-row $: *md_list_item_hover
+    ha-config-system-navigation $$ ha-list-item-button $: *list_item_button_hover
     cloud-account $ cloud-account-overview $: |
       ha-md-list-item:hover {
         --md-list-item-label-text-color: var(--hover-text) !important;
@@ -125,19 +111,20 @@ Blue Metal Dark:
   # =======================================
   apps-card-height: "120px"
   background-header: "#1e2136"
-  card-header-shadow: "2px 2px 2px #000"
+  card-header-shadow: "var(--theme-shadow)"
   disabled-bg: "#777a83"
   edit-background-header-color: "#0e1020"
-  entity-text-shadow: "1px 1px 1px #000"
+  entity-text-shadow: "var(--theme-shadow)"
   font-weight-primary: "400"
   font-weight-secondary: "500"
   ha-line-height-condensed: "1.45"
   hover-text: "#ffffee"
   light-bg-fallback-color: "#fad641"
   mini-media-player-height: "120px"
-  primary-font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+  primary-font-family: '"Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   theme-bg-alt: "#18191b"
   theme-bg: "#1d1e20"
+  theme-shadow: "1px 1px 2px rgba(0, 0, 0, 0.6)"
   theme-sidebar-icon: "#797d86"
   theme-slider-disabled: "#073288"
   today-color: "var(--primary-color)"
@@ -165,7 +152,7 @@ Blue Metal Dark:
   primary-color: "#2581ab"
   primary-text-color: "#c7c8cb"
   secondary-background-color: "var(--primary-background-color)"
-  secondary-text-color: "var(--primary-text-color)"
+  secondary-text-color: "var(--ha-color-neutral-60)"
   state-icon-color: "#6d7178"
   text-primary-color: "var(--primary-text-color)"
 
@@ -462,6 +449,24 @@ Blue Metal Dark:
   energy-grid-return-color: "#894aee"
   energy-non-fossil-color: "var(--ha-color-green-60)"
   energy-solar-color: "var(--ha-color-orange-60)"
+
+  # ≠≠=====================================
+  #   Landkaart
+  # =======================================
+  ha-color-map-land: "#191b2c"
+  ha-color-map-water: "#27357a"
+  ha-color-map-green: "#28504b"
+  ha-color-map-area: "#1d2034"
+  ha-color-map-building: "#21243c"
+  ha-color-map-building-outline: "#2a2e4a"
+  ha-color-map-road: "#2b3052"
+  ha-color-map-road-major: "#454d7d"
+  ha-color-map-road-outline: "#1a1d33"
+  ha-color-map-transit: "#2c3150"
+  ha-color-map-boundary: "#3b4068"
+  ha-color-map-label: "#e7ecf8"
+  ha-color-map-label-halo: "#12141fcc"
+  ha-color-map-label-secondary: "#959dbd"
 
   # =======================================
   #   Horizon-card
