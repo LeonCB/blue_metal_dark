@@ -13,7 +13,7 @@ Blue Metal Dark:
     .: |
       :host(vertical-stack-in-card) ha-card > div {
         --ha-card-background: none;
-      }7
+      }
       :host(mini-media-player) ha-card {
         height: var(--mini-media-player-height);
       }
