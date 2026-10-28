@@ -13,17 +13,9 @@ Blue Metal Dark:
     .: |
       :host(vertical-stack-in-card) ha-card > div {
         --ha-card-background: none;
-      }
+      }7
       :host(mini-media-player) ha-card {
         height: var(--mini-media-player-height);
-      }
-      .sgc-title {
-        text-shadow: var(--card-header-shadow);
-      }
-      .sgc-header .sgc-title {
-        font-size: var(--ha-card-header-font-size, var(--ha-font-size-2xl));
-        font-weight: var(--ha-font-weight-normal);
-        letter-spacing: -0.012em;
       }
     clock-weather-card$: |
       :host .card-header {
@@ -99,7 +91,6 @@ Blue Metal Dark:
   apps-card-height: "120px"
   background-header: "#1e2136"
   card-header-shadow: "var(--theme-shadow)"
-  disabled-bg: "#777a83"
   edit-background-header-color: "#0e1020"
   entity-text-shadow: "var(--theme-shadow)"
   font-weight-primary: "400"
@@ -116,11 +107,6 @@ Blue Metal Dark:
   theme-slider-disabled: "#073288"
   today-color: "var(--primary-color)"
   weekend-color: "#e67c73"
-
-  # =======================================
-  #   Entity row styling
-  # =======================================
-  entity-font-weight: "var(--font-weight-primary)"
 
   # =======================================
   #   Achtergrond
@@ -461,20 +447,7 @@ Blue Metal Dark:
   hc-primary: "var(--primary-text-color)"
 
   # =======================================
-  #   Mini Graph Card
-  # =======================================
-  mcg-title-font-weight: "var(--font-weight-primary)"
-  mcg-title-letter-spacing: "normal"
-
-  # =======================================
   #   Mushroom
   # =======================================
   mush-card-primary-font-weight: "var(--font-weight-primary)"
   mush-card-secondary-font-weight: "var(--font-weight-secondary)"
-  mush-chip-avatar-border-radius: "50%"
-  mush-chip-avatar-padding: "0.1em"
-  mush-chip-border-radius: "16px"
-  mush-chip-font-weight: "var(--font-weight-primary)"
-  mush-chip-height: "42px"
-  mush-chip-padding: "20px"
-  mush-chip-spacing: "16px"
