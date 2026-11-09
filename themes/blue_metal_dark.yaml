@@ -21,6 +21,9 @@ Blue Metal Dark:
       :host .card-header {
         text-shadow: var(--card-header-shadow);
       }
+      :host clock-weather-card-divider {
+        background-color: transparent;
+      }
     hui-grid-card $: |
       :host .card-header {
         text-shadow: var(--card-header-shadow);
