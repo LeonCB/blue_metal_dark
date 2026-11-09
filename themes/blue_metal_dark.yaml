@@ -391,6 +391,11 @@ Blue Metal Dark:
   clock-weather-card-bar-track-color: "color-mix(in srgb, var(--primary-color) 35%, transparent)"
 
   # =======================================
+  #   Word Clock Card
+  # =======================================
+  word-clock-card-font-family: "var(--primary-font-family)"
+
+  # =======================================
   #   Mini Media Player
   # =======================================
   mini-media-player-accent-color: "var(--accent-color)"
