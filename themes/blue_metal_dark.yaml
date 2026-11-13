@@ -10,25 +10,26 @@ Blue Metal Dark:
   # =======================================
   uix-theme: "Blue Metal Dark"
   uix-card-yaml: |
-    .: |
-      :host(vertical-stack-in-card) ha-card > div {
+    "&.type-custom-vertical-stack-in-card": |
+      ha-card > div {
         --ha-card-background: none;
       }
-      :host(mini-media-player) ha-card {
+    "&.type-custom-mini-media-player": |
+      ha-card {
         height: var(--mini-media-player-height);
       }
     clock-weather-card$: |
       :host .card-header {
         text-shadow: var(--card-header-shadow);
       }
-    hui-grid-card $: |
+      :host clock-weather-card-divider {
+        background-color: transparent;
+      }
+    hui-grid-card $: &header_shadow |
       :host .card-header {
         text-shadow: var(--card-header-shadow);
       }
-    ha-card $: |
-      :host .card-header {
-        text-shadow: var(--card-header-shadow);
-      }
+    ha-card $: *header_shadow
   uix-config-yaml: |
     ha-config-apps-installed $ supervisor-apps-card-content $: &apps_card_content |
       :host {
@@ -77,14 +78,7 @@ Blue Metal Dark:
       }
     ha-config-connectivity $$ ha-list-item-button $: *list_item_button_hover
     ha-config-system-navigation $$ ha-list-item-button $: *list_item_button_hover
-    cloud-account $ cloud-account-overview $: |
-      ha-md-list-item:hover {
-        --md-list-item-label-text-color: var(--hover-text) !important;
-        --md-list-item-supporting-text-color: var(--hover-text) !important;
-        --primary-text-color: var(--hover-text) !important;
-        --secondary-text-color: var(--hover-text) !important;
-        color: var(--hover-text) !important;
-      }
+    cloud-account $ cloud-account-overview $$ ha-list-item-button $: *list_item_button_hover
   # =======================================
   #   Variabelen
   # =======================================
@@ -133,7 +127,6 @@ Blue Metal Dark:
   #   Card
   # =======================================
   card-background-color: "var(--theme-bg)"
-  card-primary-font-weight: "var(--font-weight-primary)"
   data-table-background-color: "var(--theme-bg)"
   divider-color: "var(--theme-bg)"
   ha-card-background: "rgba(10, 10, 10, 0.5)"
@@ -379,6 +372,21 @@ Blue Metal Dark:
   link-text-color: "var(--accent-color)"
 
   # =======================================
+  #   Button Card
+  # =======================================
+  button-card-ripple-hover-opacity: "0.12"
+
+  # =======================================
+  #   Clock Weather Card
+  # =======================================
+  clock-weather-card-bar-track-color: "color-mix(in srgb, var(--primary-color) 35%, transparent)"
+
+  # =======================================
+  #   Word Clock Card
+  # =======================================
+  word-clock-card-font-family: "var(--primary-font-family)"
+
+  # =======================================
   #   Mini Media Player
   # =======================================
   mini-media-player-accent-color: "var(--accent-color)"
@@ -440,11 +448,6 @@ Blue Metal Dark:
   ha-color-map-label: "#e7ecf8"
   ha-color-map-label-halo: "#12141fcc"
   ha-color-map-label-secondary: "#959dbd"
-
-  # =======================================
-  #   Horizon-card
-  # =======================================
-  hc-primary: "var(--primary-text-color)"
 
   # =======================================
   #   Mushroom
