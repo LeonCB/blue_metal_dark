@@ -89,6 +89,7 @@ Blue Metal Dark:
   entity-text-shadow: "var(--theme-shadow)"
   font-weight-primary: "400"
   font-weight-secondary: "500"
+  gap-height: "8px"
   ha-line-height-condensed: "1.45"
   hover-text: "#ffffee"
   light-bg-fallback-color: "#fad641"
@@ -181,7 +182,6 @@ Blue Metal Dark:
   # =======================================
   #   Toggle / Switch
   # =======================================
-  mdc-theme-secondary: "#0d59f2"
   switch-checked-button-color: "#0d59f2"
   switch-checked-track-color: "#3d3f43"
   switch-unchecked-button-color: "#3d3f43"
@@ -195,9 +195,6 @@ Blue Metal Dark:
   ha-font-family-code: "var(--primary-font-family)"
   ha-font-family-longform: "var(--primary-font-family)"
   md-list-item-label-text-font: "var(--primary-font-family)"
-  mdc-typography-body1-font-family: "var(--primary-font-family)"
-  mdc-typography-button-font-family: "var(--primary-font-family)"
-  mdc-typography-font-family: "var(--primary-font-family)"
   ha-font-size-xs: "10px"
   ha-font-size-s: "12px"
   ha-font-size-m: "14px"
@@ -356,20 +353,10 @@ Blue Metal Dark:
   ha-color-form-background-disabled: "var(--ha-color-neutral-10)"
 
   # =======================================
-  #   ha-view
+  #   HA-view
   # =======================================
   ha-view-sections-column-gap: "8px"
   ha-view-sections-row-gap: "8px"
-
-  # =======================================
-  #   HACS
-  # =======================================
-  hacs-badge-color: "var(--accent-color)"
-  hacs-badge-text-color: "var(--white-color)"
-  hacs-status-installed: "#80b929"
-  hacs-status-pending-restart: "#b92938"
-  hacs-status-pending-update: "var(--ha-color-orange-50)"
-  link-text-color: "var(--accent-color)"
 
   # =======================================
   #   Button Card
@@ -394,21 +381,12 @@ Blue Metal Dark:
   mini-media-player-icon-color: "var(--primary-text-color)"
 
   # =======================================
-  #   Markdown
-  # =======================================
-  markdown-table-border-collapse: "collapse"
-  markdown-table-border-color: "transparent"
-  markdown-table-border-style: "none"
-  markdown-table-border-width: "0"
-
-  # =======================================
-  #   Mdc / invoervelden
+  #   Invoervelden
   # =======================================
   input-dropdown-icon-color: "var(--theme-sidebar-icon)"
   input-fill-color: "var(--theme-bg)"
   input-label-ink-color: "var(--primary-text-color)"
   input-text-color: "var(--primary-text-color)"
-  mdc-button-background-color: "var(--primary-color)"
 
   # =======================================
   #   CodeMirror
@@ -431,7 +409,7 @@ Blue Metal Dark:
   energy-non-fossil-color: "var(--ha-color-green-60)"
   energy-solar-color: "var(--ha-color-orange-60)"
 
-  # ≠≠=====================================
+  # =======================================
   #   Landkaart
   # =======================================
   ha-color-map-land: "#191b2c"
